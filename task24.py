@@ -19,7 +19,6 @@ for i in range(n):
     list1.append(x)
 
 list2 = []
-for i in range(len(list1) - 1):
-    list2.append(list1[i - 1] + list1[i] + list1[i + 1])
-list2.append(list1[-2] + list1[-1] + list1[0])
+for i in range(len(list1)):
+    list2.append(list1[i] + list1[i-1] + list1[i-2])
 print(max(list2))

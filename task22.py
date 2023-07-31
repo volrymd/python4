@@ -6,7 +6,7 @@
 
 n = int(input('Введите количество элементов первого множества: '))
 m = int(input('Введите количество элементов второго множества: '))
-set1 = set(sorted([int(input('Введите элемент: ')) for _ in range(n)]))
+set1 = set(sorted(int(input('Введите элемент: ')) for _ in range(n)))
 print (set1)
 set2 = set(sorted(int(input('Введите элемент: ')) for _ in range(m)))
 set3 = set1.intersection(set2)

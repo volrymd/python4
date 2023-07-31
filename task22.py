@@ -9,6 +9,7 @@ m = int(input('Введите количество элементов второ
 set1 = set(sorted(int(input('Введите элемент: ')) for _ in range(n)))
 print (set1)
 set2 = set(sorted(int(input('Введите элемент: ')) for _ in range(m)))
+print (set2)
 set3 = set1.intersection(set2)
 print(set3)
 
